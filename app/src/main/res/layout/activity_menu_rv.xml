@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuRvActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:id="@+id/accueil"
+        android:layout_width="match_parent"
+        android:layout_height="298dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/acceuil1" />
+
+    <TextView
+        android:id="@+id/visiteur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accueil"
+        android:text=" "
+        android:textColor="@color/colorAccent"
+        android:textSize="28dp"
+        android:textStyle="italic"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/consulter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consulter un rapport de visite"
+        android:layout_marginTop="5dp"
+        android:textSize="25dp"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_below="@+id/resulat"
+        android:onClick="Consulter"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/saisir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/consulter"
+        android:text="Saisir un rapport de visite"
+        android:textSize="25dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:onClick="Saisir"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/resulat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/visiteur"
+        android:textSize="23dp"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
